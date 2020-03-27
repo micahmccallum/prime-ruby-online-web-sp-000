@@ -1,8 +1,8 @@
 require 'benchmark'
 def prime?(number)
-  # if number == 2 || number == 3
-  #   return true
-  if number < 2 || number % 2 == 0
+  if number == 2
+    return true
+  elsif number < 2 || number % 2 == 0
     return false
   else
     i = 1
