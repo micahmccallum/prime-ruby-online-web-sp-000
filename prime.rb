@@ -1,12 +1,12 @@
 require 'benchmark'
 def prime?(number)
-  if number == 2
+  if number == 2 || number == 3
     return true
   elsif number < 2 || number % 2 == 0
     return false
   else
     i = 1
-    while i < (number + 7) / 2
+    while i < (number + 5) / 2
       if number % i == 0
         return false
       end
