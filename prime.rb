@@ -1,11 +1,11 @@
 require 'benchmark'
 def prime?(number)
-  if number == 2 || number == 3
-    return true
-  elsif  number < 2 || number % 2 == 0
+  # if number == 2 || number == 3
+  #   return true
+  if number < 2 || number % 2 == 0
     return false
   else
-    i = 3
+    i = 1
     while i < (number + 5) / 2
       if number % i == 0
         return false
