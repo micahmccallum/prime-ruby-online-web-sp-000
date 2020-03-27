@@ -6,7 +6,7 @@ def prime?(number)
     return false
   else
     i = 1
-    while i < (number + 5) / 2
+    while i < (number + 7) / 2
       if number % i == 0
         return false
       end
